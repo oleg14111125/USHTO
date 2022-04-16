@@ -40,7 +40,7 @@ def format_response(text: str, **values):
         if (lowcase := var_name.lower()) not in values:
             values[lowcase] = (
                 f'{{Ошибка! Не существует переменной "{var_name}", '
-                'ВНИМАТЕЛЬНО проверь название}'
+                'напиши геям из UShto}'
             )
         text = text.replace('{'+var_name+'}', str(values[lowcase]))
     return text
