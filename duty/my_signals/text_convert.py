@@ -93,6 +93,6 @@ def fonts_convert(event: MySignalEvent) -> str:
             msg = ''.join(fix.get(a, a) for a in msg)
     if dest is None:
         msg = """Просмотр списка шрифтов - .с шрифты
-        \nКоманда для конвертации:\n.с шрифт [номер]\n[текст]"""
+        \nКоманда для переделывания кмд:\n.с шрифт [номер]\n[текст]"""
     event.msg_op(2, msg, keep_forward_messages=1)
     return "ok"
