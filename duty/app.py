@@ -283,5 +283,5 @@ def on_error(e: Exception):
 def decode_error(e):
     logger.error(f'Ошибка при декодировании данных:\n{e}\n{traceback.format_exc()}')  # noqa
     return ('Произошла ошибка при декодировании JSON (скорее всего в файлах '
-            ' БД), проверь файлы в ICAD/database<br>Место, где споткнулся '
+            ' БД), свяжись с администрацией UShto '
             f'декодер: {e}')
