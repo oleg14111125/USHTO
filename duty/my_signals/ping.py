@@ -37,5 +37,5 @@ def ping_bf(event: MySignalEvent) -> str:
 def ping_lp(event: LongpollEvent) -> str:
     c_time = datetime.now().timestamp()
     delta = round(c_time - event.msg['date'], 2)
-    event.msg_op(2, f'{pings.get(event.command)} LP\nОтвет через {delta}сек.')
+    event.msg_op(2, f'{pings.get(event.command)} ЛП UShto\nОтвет через {delta}сек.')
     return "ok"
