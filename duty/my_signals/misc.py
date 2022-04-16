@@ -10,18 +10,28 @@ from duty.utils import find_mention_by_event
 from duty.api_utils import get_last_th_msgs
 from duty.objects import dp, MySignalEvent
 
-
-# Автор: https://vk.com/id570532674, доработал: https://vk.com/id194861150
 @dp.longpoll_event_register('хелп', 'help')
 @dp.my_signal_event_register('хелп', 'help')
 def a(event: MySignalEvent) -> str:
     event.edit(f'''
-        📗Команды IrCA Duty: vk.com/@ircaduty-comands
-        ⚙ Установка: https://vk.cc/c3coi7
-        💻 Исходный код: https://vk.cc/bZPeP4
-        🔧 Установка LP: https://vk.cc/c3cpNq
-        📈 Команды LP: https://vk.cc/c3cpUH
-        📓 Ваша админ панель: {event.db.host}
+        💬 Помощь
+
+    [id212217095|Оф. страница UShto]
+    ---------------------------------------------------------
+    Разработчик (кусается)
+    
+    Программист, хранитель
+    📘 Андрейчук Олег [[id620667565|Тык]]
+    --------------------------------------------------------
+    👨‍💻 Администрация Ushto:
+ 
+   Рустем Бакин [[id601244318|Тык]] 👑
+  
+❌ - имеется недоверие
+✅ - классификацирован
+👑 - полностью классифицированный
+---------------------------------------------------------
+🔗 Также за помощью Вы можете обратиться в группу чата https://vk.cc/ccgMvG
     '''.replace('    ', ''))
     return "ok"
 
